@@ -1,0 +1,130 @@
+/* imported fonts form google */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+/* -----------------variables ---------------*/
+:root {
+	/* colors */
+	--red: #d9005b;
+	--blue: #2b3fc3;
+	--green: #37c23c;
+	--purple: #341c3c;
+	--white: #fff;
+	/* fonts */
+	--railway: 'Raleway', sans-serif;
+	--railway__bold: 700;
+	--railway__semi: 600;
+	--railway__reg: 400;
+}
+/* -------------------resets-------------------- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: var(--railway);
+	color: var(--white);
+	font-size: 10px;
+}
+body {
+	background-color: var(--purple);
+}
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* ---------------globals--------------------- */
+.green-box {
+	background-color: var(--green);
+}
+.red-box {
+	background-color: var(--red);
+}
+.blue-box {
+	background-color: var(--blue);
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* -------------for mobile phones------------- */
+
+.top-nav {
+	display: none;
+}
+.logo,
+.side-nav li {
+	text-transform: uppercase;
+	font-size: 3.5rem;
+}
+header {
+	background-color: var(--red);
+	padding: 1rem 0 1.5rem 0;
+}
+
+.logo {
+	padding: 0 0 0 2rem;
+	font-weight: var(--railway__semi);
+}
+.side-nav {
+	display: none;
+	min-height: 100vh;
+}
+.side-nav ul {
+	padding: 15rem 0 0 0;
+	gap: 4rem;
+}
+
+.hero {
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.bg-img {
+	position: relative;
+	width: 100%;
+	height: 55rem;
+	background-image: url(/images//header-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bg-green {
+	width: 100%;
+	height: 42rem;
+	background-color: var(--green);
+}
+.hero-img-container {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%);
+	background-color: var(--green);
+	width: 32rem;
+	height: 35rem;
+}
+
+.hero img {
+	width: 25rem;
+	height: 30rem;
+	margin: 5rem 0 0 5rem;
+}
